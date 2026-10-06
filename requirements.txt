@@ -1,0 +1,23 @@
+# Core (needed for text/audio processing, UI, tests - no GPU required)
+numpy>=1.26
+scipy>=1.11
+soundfile>=0.12
+librosa>=0.10
+pydub>=0.25
+pymupdf>=1.24
+ebooklib>=0.18
+beautifulsoup4>=4.12
+lxml>=5.0
+python-dotenv>=1.0
+num2words>=0.5.13
+streamlit>=1.35
+pytest>=8.0
+
+# Optional sentence segmentation (falls back to regex splitter if absent)
+# spacy>=3.7   ;  python -m spacy download en_core_web_sm
+
+# Neural components (install separately - see README "Install the TTS model")
+# torch, torchaudio   -> pick the build for your CUDA version from pytorch.org
+# f5-tts              -> pip install f5-tts   (pulls weights from Hugging Face on first run)
+# resemblyzer         -> pip install resemblyzer  (speaker-similarity evaluation, GE2E)
+# openai-whisper      -> pip install openai-whisper  (optional WER/CER evaluation)

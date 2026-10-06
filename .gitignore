@@ -1,0 +1,15 @@
+.venv/
+.venv-xtts/
+__pycache__/
+*.pyc
+.env
+models/*
+!models/README.md
+data/input/*
+data/reference_voice/*
+data/processed/*
+data/output/*
+!data/*/.gitkeep
+.pytest_cache/
+*.log
+*.wav   
